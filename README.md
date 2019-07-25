@@ -1,0 +1,2 @@
+# springboot-mybatis-shardingjdbc
+SpringBoot整合Mybatis和ShardingJDBC实现读写分离
