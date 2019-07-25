@@ -18,6 +18,9 @@ public class UserServiceImplTest {
     @Autowired
     private UserService userService;
 
+    /**
+     * 读写分离写入测试
+     */
     @Test
     public void addUser() {
         User user = new User();
@@ -31,6 +34,9 @@ public class UserServiceImplTest {
         System.out.println("ret: "+ret);
     }
 
+    /**
+     * 读写分离读取测试
+     */
     @Test
     public void findById() {
         User user = userService.findById(20);
